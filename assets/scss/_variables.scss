@@ -1,0 +1,13 @@
+:root {
+  --text-color-primary: #ffffff;
+  --color-button: #EB1918;
+  --bg-color-primary: #262A34;
+  --bg-color-secondary:  #2B2F39;
+}
+
+:root[theme='light'] {
+  --text-color-primary: #020F21;
+  --color-button: #0D2437;
+  --bg-color-primary: #D1F5FF;
+  --bg-color-secondary:  #B6E8F5;
+}
