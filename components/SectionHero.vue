@@ -60,7 +60,7 @@ export default {
 }
 .home-button{
   font-family: 'Amiko';
-  font-size: 28px;
+  font-size: 20px;
   line-height: 43px;
 }
 </style>
