@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="contact">
     Section Contact works!
   </div>
 </template>

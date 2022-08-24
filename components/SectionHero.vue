@@ -1,6 +1,6 @@
 <template>
-  <div>
-    Section Hero works!
+  <div id="home">
+    Section Hero works!!
   </div>
 </template>
 
