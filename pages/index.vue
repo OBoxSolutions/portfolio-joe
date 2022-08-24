@@ -19,3 +19,6 @@ export default {
   components: { SectionHero, SectionAbout, SectionProjects, SectionContact, TheNavbar }
 }
 </script>
+
+<style lang="scss" scoped>
+</style>

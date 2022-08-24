@@ -62,5 +62,6 @@ export default {
   font-family: 'Amiko';
   font-size: 20px;
   line-height: 43px;
+  margin-bottom: 3rem;
 }
 </style>
