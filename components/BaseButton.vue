@@ -1,6 +1,6 @@
 <template>
   <button
-    class="button bg-button"
+    class="button bg-text-button"
     v-bind="$attrs"
     v-on="$listeners"
   >
