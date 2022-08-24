@@ -1,1 +1,18 @@
 @import "./variables";
+
+
+.color-primary {
+  color: var(--text-color-primary);
+}
+
+.bg-primary {
+  background-color: var(--bg-color-primary) !important;
+}
+
+.bg-secondary {
+  background-color: var(--bg-color-secondary) !important;
+}
+
+.bg-button {
+  background-color: var(--color-button) !important;
+}
