@@ -7,19 +7,26 @@
       </div>
     </div>
     <div class="about-right-panel bg-secondary">
-      Hola
+      <h1>Skills</h1>
+      <div class="right-panel-container">
+        <line-with-circles class="line" />
+        <div class="skills" />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import LineWithCircles from './LineWithCircles.vue'
 export default {
-  name: 'SectionAbout'
+  name: 'SectionAbout',
+  components: { LineWithCircles }
 }
 </script>
 
 <style lang="scss" scoped>
 #about{
+  height: 900px;
   display: flex;
 
   .about-left-panel{
@@ -41,6 +48,20 @@ export default {
   }
   .about-right-panel{
     width: 66.66%;
+
+    h1{
+      margin-top: 5rem;
+      margin-left: 4rem;
+    }
+
+    .right-panel-container{
+      display: flex;
+
+      .line{
+        margin-top: 7rem;
+        margin-left: 4rem;
+      }
+    }
 
   }
 
