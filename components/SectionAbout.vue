@@ -10,7 +10,35 @@
       <h1>Skills</h1>
       <div class="right-panel-container">
         <line-with-circles class="line" />
-        <div class="skills" />
+        <div class="skills-container">
+          <div class="skill-row">
+            <div class="img-container">
+              <img src="/backend.svg" alt="backend">
+            </div>
+            <div class="skill-text">
+              <h1>Backend tech</h1>
+              <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="img-container">
+              <img src="/databases.svg" alt="databases">
+            </div>
+            <div class="skill-text">
+              <h1>Databases</h1>
+              <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="img-container">
+              <img src="/frontend.svg" alt="frontend">
+            </div>
+            <div class="skill-text">
+              <h1>Frontend tech</h1>
+              <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -26,7 +54,7 @@ export default {
 
 <style lang="scss" scoped>
 #about{
-  height: 900px;
+  // height: 900px;
   display: flex;
 
   .about-left-panel{
@@ -48,18 +76,60 @@ export default {
   }
   .about-right-panel{
     width: 66.66%;
+    margin-bottom: 2rem;
 
     h1{
-      margin-top: 5rem;
-      margin-left: 4rem;
+      margin: 5rem 0 2rem 4rem;
     }
 
     .right-panel-container{
       display: flex;
+      margin-bottom: 4rem;
 
       .line{
         margin-top: 7rem;
         margin-left: 4rem;
+      }
+
+      .skills-container{
+        margin-top: 1rem;
+        margin-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 6.5rem;
+
+        .img-container{
+          width: 15%;
+        }
+
+        .skill-row{
+          display: flex;
+
+          h1{
+            font-size: 30px;
+          }
+
+          &:first-child{
+            margin-top: 2rem;
+          }
+          &:last-child{
+            margin-top: 2rem;
+          }
+
+          .skill-text{
+            width: 70%;
+            margin-left: 2rem;
+            margin-top: -1rem;
+
+            h1{
+              margin: 0;
+            }
+            p{
+              margin: 0;
+            }
+
+          }
+        }
       }
     }
 

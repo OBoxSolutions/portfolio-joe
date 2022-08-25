@@ -40,19 +40,19 @@ export default {
     margin-top: 0;
   }
   &:first-child::before{
-    height: 1.875em;
-    top: -2em;
+    height: 2.8125rem;
+    top: -2.8125rem;
   }
   &:last-child::after{
     position: absolute;
     width: .1px;
     background-color: var(--text-color-primary);
-    height: 1.875em;
+    height: 2.8125rem;
     display: block;
     content: '';
     left: 50%;
     z-index: 1;
-    bottom: -1.875em;
+    bottom: -2.8125rem;
     margin-left: -1px;
   }
 }
