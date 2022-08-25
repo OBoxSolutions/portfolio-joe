@@ -13,7 +13,8 @@
         <div class="skills-container">
           <div class="skill-row">
             <div class="img-container">
-              <img src="/backend.svg" alt="backend">
+              <!-- <img src="/backend.svg" alt="backend"> -->
+              <font-awesome-icon icon="fa-solid fa-user-secret" />
             </div>
             <div class="skill-text">
               <h1>Backend tech</h1>
@@ -100,6 +101,9 @@ export default {
 
         .img-container{
           width: 15%;
+          .icon{
+            color:red !important;
+          }
         }
 
         .skill-row{

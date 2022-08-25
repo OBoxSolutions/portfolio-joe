@@ -4,17 +4,23 @@
     <div class="social-networks">
       <div class="rounded-circle bg-text-button">
         <a href="#">
-          <img src="/linked-in.svg" alt="linked-in">
+          <span class="icon">
+            <i class="fa fa-linkedin" />
+          </span>
         </a>
       </div>
       <div class="rounded-circle bg-text-button">
         <a href="#">
-          <img src="/github.svg" alt="github">
+          <span class="icon">
+            <i class="fa fa-github" />
+          </span>
         </a>
       </div>
       <div class="rounded-circle bg-text-button">
         <a href="#">
-          <img src="/email.svg" alt="email">
+          <span class="icon">
+            <i class="fa fa-at" />
+          </span>
         </a>
       </div>
     </div>
@@ -40,10 +46,12 @@ export default {
     margin-bottom: 3rem;
   }
   .rounded-circle{
-    padding: .5em;
+    padding: 2px 10px;
 
-    img{
-      width: 1.5em;
+    .icon{
+      font-size: 2.2em;
+      margin: auto;
+      color: var(--bg-color-primary);
     }
   }
 }

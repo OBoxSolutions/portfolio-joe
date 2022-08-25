@@ -16,8 +16,8 @@ export default {
 .circle {
   position: relative;
   border-radius: 100%;
-  width: 3.125em;
-  padding: 1.25em 0;
+  width: 2.4em;
+  padding: 1.3em 0;
   line-height: 50px;
   text-align: center;
   margin-top: 12.5rem;

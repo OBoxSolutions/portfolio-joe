@@ -70,7 +70,7 @@ export default {
       list-style-type: none;
       a{
         &:hover{
-          color: #ffffffc6 !important;
+          color: var(--color-link) !important;
         }
       }
     }
