@@ -23,6 +23,10 @@ export default {
   border-radius: 10px;
   padding: 0 1rem;
   cursor: pointer;
+
+  &:hover{
+    background-color: var(--color-hover-button) !important;
+  }
 }
 
 </style>

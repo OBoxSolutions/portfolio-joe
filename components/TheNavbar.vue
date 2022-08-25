@@ -40,7 +40,7 @@ export default {
 
 <style lang="scss" scoped>
 .navbar{
-  padding: 3.5rem;
+  padding: 1rem 3.5rem;
   display: flex;
 
   .navbar-menu{
@@ -51,7 +51,9 @@ export default {
     .navbar-menu-item{
       list-style-type: none;
       a{
-        text-decoration: none;
+        &:hover{
+          color: #ffffffc6 !important;
+        }
       }
     }
   }

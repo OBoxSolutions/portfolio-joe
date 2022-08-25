@@ -50,6 +50,7 @@ export default {
   }
   .home-description{
     width: 30%;
+    margin-top: 1rem;
   }
   p{
     font-family: 'Amiko';
