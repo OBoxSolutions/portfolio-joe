@@ -10,7 +10,7 @@
         </a>
       </li>
     </ul>
-    <div class="navbar-theme-switcher">
+    <div class="navbar-theme-switcher" @click="toggleTheme">
       <img src="/theme-switch.svg" alt="theme-switch">
     </div>
   </nav>
@@ -28,10 +28,28 @@ export default {
       ]
     }
   },
+  beforeMount () {
+    if (localStorage.getItem('theme') === 'theme-dark') {
+      this.setTheme('theme-dark')
+    } else {
+      this.setTheme('theme-light')
+    }
+  },
   methods: {
     scrollToPosition (postitionId) {
       const elmnt = document.getElementById(postitionId.split('#').pop())
       elmnt.scrollIntoView({ behavior: 'smooth' })
+    },
+    toggleTheme () {
+      if (localStorage.getItem('theme') === 'theme-dark') {
+        this.setTheme('theme-light')
+      } else {
+        this.setTheme('theme-dark')
+      }
+    },
+    setTheme (themeName) {
+      localStorage.setItem('theme', themeName)
+      document.documentElement.className = themeName
     }
   }
 
