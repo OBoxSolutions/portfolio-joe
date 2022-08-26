@@ -83,6 +83,9 @@ export default {
     top: 1.5em;
     right: 1.5em;
     cursor: pointer;
+    .icon{
+      font-size: 1.5em;
+    }
   }
 }
 

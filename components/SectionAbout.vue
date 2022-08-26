@@ -130,6 +130,9 @@ export default {
           &:first-child, &:last-child{
             margin-top: 2rem;
           }
+          &:last-child{
+            margin-top: 1rem;
+          }
 
           .skill-text{
             width: 70%;
