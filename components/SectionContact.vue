@@ -52,6 +52,10 @@ export default {
       font-size: 2.2em;
       margin: auto;
       color: var(--bg-color-primary);
+
+      &:hover{
+        color: #ffffff;
+      }
     }
   }
 }
