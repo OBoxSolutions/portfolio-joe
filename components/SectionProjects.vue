@@ -17,7 +17,7 @@
             </span>
           </div>
           <base-button class="card-button">
-            <a :href="project.link" class="color-primary">Visit</a>
+            <a :href="project.link">Visit</a>
           </base-button>
         </div>
       </div>

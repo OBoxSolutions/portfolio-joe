@@ -39,7 +39,7 @@ export default {
     margin-bottom: 1.5rem;
     font-family: 'Open Sans';
     font-size: 50px;
-
+    text-align: center;
   }
 
   .home-picture{
