@@ -73,6 +73,7 @@ export default {
     gap: 1rem;
 
     .navbar-menu-item{
+
       list-style-type: none;
       a{
         &:hover{
