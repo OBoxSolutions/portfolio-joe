@@ -83,6 +83,29 @@ export default {
 }
 @media only screen and (max-width: 800px) {
   .circle{
+    margin-top: 12em !important;
+
+    &:first-child {
+      background: url('/skills-images/backend.svg') center no-repeat;
+      background-size: 25px 25px;
+    }
+    &:nth-child(2) {
+      background: url('/skills-images/databases.svg') center no-repeat;
+      background-size: 25px 25px;
+    }
+    &:last-child {
+      background: url('/skills-images/frontend.svg') center no-repeat;
+      background-size: 25px 25px;
+    }
+
+    &::before{
+      height: 12em !important;
+      top: -12em !important;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .circle{
     margin-top: 22em !important;
 
     &:first-child {

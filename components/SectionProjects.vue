@@ -55,27 +55,31 @@ export default {
     margin-bottom: 3rem;
   }
 
-.projects-container{
-  width: 95%;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-  padding-bottom: 3rem;
-}
-.card-button{
-  float: right;
-  margin-top: 3rem;
-}
-.card-detail-badge {
-  text-align: center;
-  border-radius: 30px 30px 30px 30px;
-  padding: 3px 8px;
-  font-size: 14px;
-
-  .badge-text{
-    color: var(--badge-color);
+  h5{
+    font-family: 'Amiko', sans-serif;
   }
-}
+
+  .projects-container{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding-bottom: 3rem;
+  }
+  .card-button{
+    float: right;
+    margin-top: 3rem;
+  }
+  .card-detail-badge {
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    padding: 3px 8px;
+    font-size: 14px;
+
+    .badge-text{
+      color: var(--badge-color);
+    }
+  }
 }
 </style>
