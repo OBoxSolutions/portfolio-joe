@@ -30,7 +30,7 @@ export default {
       ]
     }
   },
-  beforeMount () {
+  mounted () {
     if (localStorage.getItem('theme') === 'theme-dark') {
       this.setTheme('theme-dark')
     } else {
