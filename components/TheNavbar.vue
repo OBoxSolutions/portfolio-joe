@@ -66,6 +66,7 @@ export default {
   .navbar-menu{
     margin: auto;
     display: flex;
+    width: 42%;
     gap: 1rem;
 
     .navbar-menu-item{
@@ -77,11 +78,25 @@ export default {
       }
     }
   }
-
   .navbar-theme-switcher{
-    margin-left: auto;
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
     cursor: pointer;
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .navbar{
+    flex-direction: column;
+    align-items: center;
+
+    .navbar-menu{
+      width: 100%;
+    }
+    .navbar-title{
+      text-align: center;
+    }
+  }
+}
 </style>

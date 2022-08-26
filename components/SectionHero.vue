@@ -43,6 +43,8 @@ export default {
   }
 
   .home-picture{
+    display: flex;
+    justify-content: center;
     img{
       border-radius: 50%;
       object-fit: contain;
@@ -64,5 +66,18 @@ export default {
   font-size: 20px;
   line-height: 43px;
   margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .home-picture{
+    display: flex;
+    justify-content: center;
+    img{
+      width: 95%;
+    }
+  }
+  .home-description{
+    width: 90% !important;
+  }
 }
 </style>
