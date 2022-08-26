@@ -2,7 +2,7 @@
   <div id="projects" class="bg-primary">
     <h1>Projects</h1>
     <div class="projects-container">
-      <div v-for="(project, index) in projects" :key="`project-${index}`" class="card bg-secondary" style="width: 18rem; margin:auto;">
+      <div v-for="(project, index) in projects" :key="`project-${index}`" class="card bg-secondary" style="width: 18rem;">
         <img class="card-img-top" :src="project.image" alt="Project image cap">
         <div class="card-body">
           <h5 class="card-title color-primary">
@@ -50,31 +50,35 @@ export default {
 <style lang="scss" scoped>
 #projects{
   h1{
-    width: 93%;
-    margin: auto;
-    margin-bottom: 3rem;
+    margin: 0 2rem 3rem;
   }
 
   h5{
     font-family: 'Amiko', sans-serif;
+    font-size: 2em;
   }
 
   .projects-container{
-    width: 95%;
-    margin: auto;
+    margin-left: 2rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 6rem;
     padding-bottom: 3rem;
+  }
+  .card{
+    border: none !important;
   }
   .card-button{
     float: right;
     margin-top: 3rem;
+    padding: 2px 1.5em;
+    border-radius: 5px;
   }
   .card-detail-badge {
     text-align: center;
     border-radius: 30px 30px 30px 30px;
     padding: 3px 8px;
+    margin: 3px;
     font-size: 14px;
 
     .badge-text{

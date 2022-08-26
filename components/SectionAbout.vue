@@ -113,6 +113,7 @@ export default {
 
         .img-container{
           width: 15%;
+          margin-right: 1em;
           .icon{
             font-size: 7em;
             color: var(--text-color-primary);
@@ -148,6 +149,10 @@ export default {
   .skill-row:last-child{
     margin-top: 0 !important;
   }
+  .skill-text{
+    widows: 80% !important;
+    margin-left: 3.5rem !important;
+  }
 }
 @media only screen and (max-width: 1285px) {
   .skills-container{
@@ -157,8 +162,14 @@ export default {
     margin-left: 1rem !important;
   }
   .skill-text{
-    width: 90% !important;
+    width: 75% !important;
     margin-left: 2.5rem !important;
+  }
+}
+@media only screen and (max-width: 875px) {
+  .skill-text{
+    width: 80% !important;
+    margin-left: 3.5rem !important;
   }
 }
 
