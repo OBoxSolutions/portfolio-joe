@@ -63,10 +63,13 @@ export default {
   padding: 1rem 3.5rem;
   display: flex;
 
+  .navbar-title{
+    position: absolute;
+  }
+
   .navbar-menu{
-    margin: auto;
+    margin: 2rem auto;
     display: flex;
-    width: 42%;
     gap: 1rem;
 
     .navbar-menu-item{
@@ -96,9 +99,11 @@ export default {
 
     .navbar-menu{
       width: 100%;
+      margin: auto !important;
     }
     .navbar-title{
       text-align: center;
+      position: unset !important;
     }
   }
 }

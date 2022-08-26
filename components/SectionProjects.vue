@@ -59,7 +59,7 @@ export default {
   }
 
   .projects-container{
-    margin-left: 2rem;
+    margin-left: 2.5rem;
     display: flex;
     flex-wrap: wrap;
     gap: 6rem;
@@ -84,6 +84,13 @@ export default {
     .badge-text{
       color: var(--badge-color);
     }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .projects-container{
+    margin-left: 0 !important;
+    justify-content: center !important;
   }
 }
 </style>
