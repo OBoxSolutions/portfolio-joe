@@ -37,7 +37,7 @@ export default {
     margin-left: -1px;
   }
   &:first-child{
-    margin-top: 0;
+    margin-top: 0 !important;
   }
   &:first-child::before{
     height: 2.8125rem;
@@ -54,6 +54,54 @@ export default {
     z-index: 1;
     bottom: -2.8125rem;
     margin-left: -1px;
+  }
+}
+
+@media only screen and (max-width: 1285px) {
+  .circle{
+    margin-top: 14.5rem !important;
+
+    &::before{
+      height: 14.5em !important;
+      top: -14.5em !important;
+    }
+    &:first-child::before{
+      height: 2.8125rem !important;
+      top: -2.8125rem !important;
+    }
+  }
+}
+@media only screen and (max-width: 1028px) {
+  .circle{
+    margin-top: 16rem !important;
+
+    &::before{
+      height: 16em !important;
+      top: -16em !important;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .circle{
+    margin-top: 22em !important;
+
+    &:first-child {
+      background: url('/backend.svg') center no-repeat;
+      background-size: 25px 25px;
+    }
+    &:nth-child(2) {
+      background: url('/databases.svg') center no-repeat;
+      background-size: 25px 25px;
+    }
+    &:last-child {
+      background: url('/frontend.svg') center no-repeat;
+      background-size: 25px 25px;
+    }
+
+    &::before{
+      height: 22em !important;
+      top: -22em !important;
+    }
   }
 }
 </style>

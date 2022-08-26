@@ -7,43 +7,48 @@
       </div>
     </div>
     <div class="about-right-panel bg-secondary">
-      <h1>Skills</h1>
+      <h1 class="panel-title">
+        Skills
+      </h1>
       <div class="right-panel-container">
         <line-with-circles class="line" />
         <div class="skills-container">
           <div class="skill-row">
             <div class="img-container">
-              <!-- <img src="/backend.svg" alt="backend"> -->
               <span class="icon">
                 <i class="fa fa-server" />
               </span>
             </div>
             <div class="skill-text">
-              <h1>Backend tech</h1>
+              <h1 class="skill-title">
+                Backend tech
+              </h1>
               <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
             </div>
           </div>
           <div class="skill-row">
             <div class="img-container">
-              <!-- <img src="/databases.svg" alt="databases"> -->
               <span class="icon">
                 <i class="fa fa-database" />
               </span>
             </div>
             <div class="skill-text">
-              <h1>Databases</h1>
+              <h1 class="skill-title">
+                Databases
+              </h1>
               <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
             </div>
           </div>
           <div class="skill-row">
             <div class="img-container">
-              <!-- <img src="/frontend.svg" alt="frontend"> -->
               <span class="icon">
                 <i class="fa fa-code" />
               </span>
             </div>
             <div class="skill-text">
-              <h1>Frontend tech</h1>
+              <h1 class="skill-title">
+                Frontend tech
+              </h1>
               <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
             </div>
           </div>
@@ -63,7 +68,6 @@ export default {
 
 <style lang="scss" scoped>
 #about{
-  // height: 900px;
   display: flex;
 
   .about-left-panel{
@@ -87,7 +91,7 @@ export default {
     width: 66.66%;
     margin-bottom: 2rem;
 
-    h1{
+    .panel-title{
       margin: 5rem 0 2rem 4rem;
     }
 
@@ -118,30 +122,66 @@ export default {
         .skill-row{
           display: flex;
 
-          h1{
+          .skill-title{
             font-size: 30px;
+            margin: 0;
           }
 
-          &:first-child{
-            margin-top: 2rem;
-          }
-          &:last-child{
+          &:first-child, &:last-child{
             margin-top: 2rem;
           }
 
           .skill-text{
             width: 70%;
             margin-left: 1.5rem;
-
-            h1, p{
-              margin: 0;
-            }
           }
         }
       }
     }
-
   }
 
+}
+@media only screen and (max-width: 1400px) {
+  .skill-row:last-child{
+    margin-top: 0 !important;
+  }
+}
+@media only screen and (max-width: 1285px) {
+  .skills-container{
+    margin-left: 1rem !important;
+  }
+  .line{
+    margin-left: 1rem !important;
+  }
+  .skill-text{
+    width: 90% !important;
+    margin-left: 2.5rem !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #about{
+    flex-direction: column;
+  }
+  .about-left-panel, .about-right-panel{
+    width: unset !important;
+  }
+  .about-description{
+    width: 90% !important;
+    margin-bottom: 1rem;
+  }
+  .panel-title{
+    margin: 1rem 0 0 2rem !important;
+  }
+  .skills-container{
+    margin-left: -1em !important;
+
+    .skill-text{
+      margin-right: 20px !important;
+    }
+  }
+  .img-container{
+    display: none;
+  }
 }
 </style>
