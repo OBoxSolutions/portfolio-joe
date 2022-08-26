@@ -14,7 +14,9 @@
           <div class="skill-row">
             <div class="img-container">
               <!-- <img src="/backend.svg" alt="backend"> -->
-              <font-awesome-icon icon="fa-solid fa-user-secret" />
+              <span class="icon">
+                <i class="fa fa-server" />
+              </span>
             </div>
             <div class="skill-text">
               <h1>Backend tech</h1>
@@ -23,7 +25,10 @@
           </div>
           <div class="skill-row">
             <div class="img-container">
-              <img src="/databases.svg" alt="databases">
+              <!-- <img src="/databases.svg" alt="databases"> -->
+              <span class="icon">
+                <i class="fa fa-database" />
+              </span>
             </div>
             <div class="skill-text">
               <h1>Databases</h1>
@@ -32,7 +37,10 @@
           </div>
           <div class="skill-row">
             <div class="img-container">
-              <img src="/frontend.svg" alt="frontend">
+              <!-- <img src="/frontend.svg" alt="frontend"> -->
+              <span class="icon">
+                <i class="fa fa-code" />
+              </span>
             </div>
             <div class="skill-text">
               <h1>Frontend tech</h1>
@@ -97,12 +105,13 @@ export default {
         margin-left: 2rem;
         display: flex;
         flex-direction: column;
-        gap: 6.5rem;
+        gap: 3.5rem;
 
         .img-container{
           width: 15%;
           .icon{
-            color:red !important;
+            font-size: 7em;
+            color: var(--text-color-primary);
           }
         }
 
@@ -122,16 +131,11 @@ export default {
 
           .skill-text{
             width: 70%;
-            margin-left: 2rem;
-            margin-top: -1rem;
+            margin-left: 1.5rem;
 
-            h1{
+            h1, p{
               margin: 0;
             }
-            p{
-              margin: 0;
-            }
-
           }
         }
       }

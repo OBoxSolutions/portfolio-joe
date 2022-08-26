@@ -11,7 +11,9 @@
       </li>
     </ul>
     <div class="navbar-theme-switcher" @click="toggleTheme">
-      <img src="/theme-switch.svg" alt="theme-switch">
+      <span class="icon">
+        <i class="fa fa-adjust" />
+      </span>
     </div>
   </nav>
 </template>
