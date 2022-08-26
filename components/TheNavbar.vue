@@ -31,10 +31,10 @@ export default {
     }
   },
   mounted () {
-    if (localStorage.getItem('theme') === 'theme-dark') {
-      this.setTheme('theme-dark')
-    } else {
+    if (localStorage.getItem('theme') === 'theme-light') {
       this.setTheme('theme-light')
+    } else {
+      this.setTheme('theme-dark')
     }
   },
   methods: {
