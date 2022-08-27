@@ -51,6 +51,7 @@ export default {
 #projects{
   h1{
     margin: 0 2rem 3rem;
+    font-size: 40px;
   }
 
   h5{

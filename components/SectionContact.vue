@@ -1,6 +1,8 @@
 <template>
   <div id="contact" class="bg-primary">
-    <h1>Contact Me</h1>
+    <h1>
+      Contact Me
+    </h1>
     <div class="social-networks">
       <div class="rounded-circle bg-text-button">
         <a href="#">
@@ -39,6 +41,10 @@ export default {
   flex-direction: column;
   align-items: center;
   gap: 1em;
+
+  h1{
+    font-size: 40px;
+  }
 
   .social-networks{
     display: flex;

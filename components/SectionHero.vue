@@ -30,15 +30,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$navbar-height: 100px;
+
 #home{
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: calc(100vh - $navbar-height);
 
   .home-title{
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     font-family: 'Open Sans';
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
   }
 
@@ -52,12 +55,11 @@ export default {
   }
   .home-description{
     width: 30%;
-    margin-top: 1rem;
+    margin-top: .5rem;
   }
   p{
     font-family: 'Amiko';
     font-size: 1em;
-    line-height: 27px;
     text-align: center;
   }
 }
@@ -65,7 +67,6 @@ export default {
   font-family: 'Amiko';
   font-size: 20px;
   line-height: 43px;
-  margin-bottom: 3rem;
 }
 
 @media only screen and (max-width: 800px) {

@@ -21,7 +21,7 @@ export default {
   border: none;
   outline: none;
   border-radius: 10px;
-  padding: 0 1rem;
+  padding: 0 1.3rem;
   cursor: pointer;
 
   &:hover{

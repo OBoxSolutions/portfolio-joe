@@ -1,10 +1,12 @@
 <template>
   <div>
     <the-navbar />
-    <section-hero />
-    <section-about />
-    <section-projects />
-    <section-contact />
+    <div class="sections-container bg-primary">
+      <section-hero />
+      <section-about />
+      <section-projects />
+      <section-contact />
+    </div>
   </div>
 </template>
 
@@ -21,4 +23,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.sections-container{
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+}
 </style>

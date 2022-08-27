@@ -59,7 +59,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$navbar-height: 100px;
 .navbar{
+  height: $navbar-height;
   padding: 1rem 3.5rem;
   display: flex;
 
@@ -99,7 +101,6 @@ export default {
     align-items: center;
 
     .navbar-menu{
-      width: 100%;
       margin: auto !important;
     }
     .navbar-title{

@@ -2,12 +2,14 @@
   <div id="about" class="bg-primary color-primary">
     <div class="about-left-panel">
       <div class="about-description">
-        <h1>About me</h1>
+        <h1 class="section-title">
+          About me
+        </h1>
         <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
       </div>
     </div>
     <div class="about-right-panel bg-secondary">
-      <h1 class="panel-title">
+      <h1 class="panel-title section-title">
         Skills
       </h1>
       <div class="right-panel-container">
@@ -69,6 +71,10 @@ export default {
 <style lang="scss" scoped>
 #about{
   display: flex;
+
+  .section-title{
+    font-size: 40px !important;
+  }
 
   .about-left-panel{
     width: 33.333%;
