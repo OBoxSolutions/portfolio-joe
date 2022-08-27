@@ -60,10 +60,10 @@ export default {
   }
 
   .projects-container{
-    margin-left: 2.5rem;
+    margin-left: 4.5rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 6rem;
+    gap: 6rem 4.5rem;
     padding-bottom: 3rem;
   }
   .card{
